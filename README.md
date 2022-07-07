@@ -1,5 +1,5 @@
-bastion_IP = 51.250.79.19  
-    
+bastion_IP = 51.250.79.19
+
  someinternalhost_IP = 10.128.0.20
 
 
@@ -13,15 +13,15 @@ bastion_IP = 51.250.79.19
  - Пункт 2
 
 ## Как запустить проект:
- - Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0   
+ - Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
  - eval `ssh-agent -s`  (eval $(ssh-agent))
  - ssh-add -L
- - ssh-add  C:/Users/Maria/.ssh/appuser 
+ - ssh-add  C:/Users/Maria/.ssh/appuser
  - ssh -i  ~/.ssh/appuser -A appuser@51.250.79.19
  - ssh ~/.ssh/appuser -A -t appuser@51.250.79.19 ssh appuser@10.128.0.20
  - sudo pritunl setup-key
  - sudo pritunl default-password ( username: "pritunl")
- 
+
  ## Конфигураци
 
 ```
