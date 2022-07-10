@@ -2,7 +2,7 @@ bastion_IP = 51.250.79.19
 
  someinternalhost_IP = 10.128.0.20
 
-  testapp_IP = 51.250.82.223
+  testapp_IP = 51.250.70.254
 
   testapp_port = 9292
 
@@ -28,18 +28,18 @@ bastion_IP = 51.250.79.19
  - sudo pritunl setup-key
  - sudo pritunl default-password ( username: "pritunl")
 
+### HW4
+ - ssh 51.250.70.254
+ - ssh-keygen -R 51.250.70.254
+ - ssh -i  ~/.ssh/appuser -A  yc-user@ 51.250.70.254
 
- ###HW4
- - ssh-keygen -R 51.250.82.223
- - ssh -i  ~/.ssh/appuser -A  yc-user@51.250.82.223
-
- ####mongo
+####mongo
  - sudo apt-get install -y mongodb
  - sudo systemctl start mongodb
  - sudo systemctl enable mongodb
  - sudo systemctl status mongodb
 
- ####git
+####git
  - sudo apt update
  - sudo apt install git
  - git clone -b monolith https://github.com/express42/reddit.git
