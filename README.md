@@ -2,7 +2,7 @@ bastion_IP = 51.250.79.19
 
  someinternalhost_IP = 10.128.0.20
 
-  testapp_IP = 51.250.70.254
+  testapp_IP = 51.250.3.113
 
   testapp_port = 9292
 
@@ -29,9 +29,9 @@ bastion_IP = 51.250.79.19
  - sudo pritunl default-password ( username: "pritunl")
 
 ### HW4
- - ssh 51.250.70.254
- - ssh-keygen -R 51.250.70.254
- - ssh -i  ~/.ssh/appuser -A  yc-user@ 51.250.70.254
+ - ssh 51.250.3.113
+ - ssh-keygen -R 51.250.3.113
+ - ssh -i  ~/.ssh/appuser -A  yc-user@51.250.3.113
 
 ####mongo
  - sudo apt-get install -y mongodb
