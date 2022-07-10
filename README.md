@@ -44,22 +44,22 @@ bastion_IP = 51.250.79.19
  - touch install_ruby.sh
  - cat>install_ruby.sh #для окончания ввода текстаCtrl+D
  - cat install_ruby.sh
- - chmod ugo+x ./install_ruby.sh
+ - chmod +x ./install_ruby.sh
  -  ls -l ./install_ruby.sh #-rwxrwxr-x 1
  - ./install_ruby.sh
  #####install_mongodb.sh
  - touch install_mongodb.sh
  - cat>install_mongodb.sh #Ctrl+D
  - cat install_mongodb.sh
- - chmod ugo+x ./install_mongodb.sh
- - ls -l ./install_mongodb.sh #вывод -rwxrwxr-x 1
+ - chmod +x ./install_mongodb.sh
+ - ls -l ./install_mongodb.sh
  - ./install_mongodb.sh
  #####deploy.sh
  - touch deploy.sh
  - cat>deploy.sh #Ctrl+D
  - cat deploy.sh
- - chmod ugo+x ./deploy.sh
- - ls -l ./deploy.sh #-rwxrwxr-x 1
+ - chmod +x ./deploy.sh
+ - ls -l ./deploy.sh
  - ./deploy.sh
 
  ## Конфигураци
