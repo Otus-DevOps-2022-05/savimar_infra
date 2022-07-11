@@ -67,7 +67,17 @@ bastion_IP = 51.250.79.19
  - chmod +x ./deploy.sh
  - ls -l ./deploy.sh
  - ./deploy.sh
+ - git add --chmod=+x install_ruby.sh
 
+
+### HW5
+
+- yc iam service-account create --name $SVC_ACCT --folder-id $FOLDER_ID
+- yc iam service-account list
+- yc iam key create --service-account-id $SVC_ACCT_ID --output F:/devops_otus/yandex.cloud.key/key.json
+
+
+- packer build ./ubuntu16.json
  ## Конфигураци
 
 ```
