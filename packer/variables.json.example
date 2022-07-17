@@ -1,6 +1,6 @@
 {
     "source_image": "ubuntu-1604-lts",
-    "key": "key.json",
+    "key":"key",
     "folder": "id folder",
     "subnet": "id subnet"
 }
