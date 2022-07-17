@@ -1,6 +1,6 @@
 {
     "source_image": "ubuntu-1604-lts",
-    "key":"F:/devops_otus/yandex.cloud.key/key.json",
+    "key":"key.json",
     "folder": "id folder",
     "subnet": "id subnet"
 }
