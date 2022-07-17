@@ -1,0 +1,6 @@
+{
+    "source_image_family": "ubuntu-1604-lts",
+    "user_key":"F:/devops_otus/yandex.cloud.key/key.json",
+    "user_id_folder": "b1g5cboiud6mdlfd9pkp",
+    "subnet_id": "e9bl6cnmn9hisctlkf2m"
+}
