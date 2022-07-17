@@ -1,6 +1,6 @@
 {
-    "source_image_family": "ubuntu-1604-lts",
-    "user_key":"C:/yandex.cloud./key.json",
-    "user_id_folder": "b1g9cboiud3mdlfd7pkp",
-    "subnet_id": "e8bl4cnmn3hisctlkf28m"
+    "source_image": "ubuntu-1604-lts",
+    "key": "key.json",
+    "folder": "id folder",
+    "subnet": "id subnet"
 }

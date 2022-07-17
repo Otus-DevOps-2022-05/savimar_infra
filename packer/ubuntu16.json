@@ -4,14 +4,14 @@
 "builders": [
  {
   "type": "yandex",
-   "service_account_key_file":  "{{user_key}}",
-   "folder_id": "{{user_id_folder}}" ,
-   "source_image_family": "{{source_image_family}}",
+   "service_account_key_file": "{{user `key`}}",
+   "folder_id": "{{user `folder`}}",
+   "source_image_family": "{{user `source_image`}}",
    "image_name": "reddit-base-{{timestamp}}",
    "image_family": "reddit-base",
    "ssh_username": "ubuntu",
    "platform_id": "standard-v1",
-   "subnet_id": "{{subnet_id}}",
+   "subnet_id": "{{user `subnet`}}",
    "use_ipv4_nat": "true"
 
  }
