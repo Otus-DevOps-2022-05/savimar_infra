@@ -7,7 +7,7 @@ bastion_IP = 51.250.79.19
   testapp_port = 9292
 
 
-# Выполнено ДЗ №4
+# Выполнено ДЗ №5
 
  - [ ] Основное ДЗ
  - [ ] Задание со *
@@ -67,24 +67,30 @@ bastion_IP = 51.250.79.19
  - chmod +x ./deploy.sh
  - ls -l ./deploy.sh
  - ./deploy.sh
+ - git add --chmod=+x install_ruby.sh
 
- ## Конфигураци
 
-```
-Maria@DESKTOP-HUB088N MINGW64 ~/.ssh
-$  ssh -i ~/.ssh/appuser appuser@10.128.0.20
-The authenticity of host '10.128.0.20 (10.128.0.20)' can't be established.
-ED25519 key fingerprint is SHA256:W5puiZU7lvbY9DAHBOyTgcMw652FHz0MKx3AY98pdx0.
-This key is not known by any other names
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added '10.128.0.20' (ED25519) to the list of known hosts.
-Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.4.0-121-generic x86_64)
- * Documentation:  https://help.ubuntu.com
- * Management:     https://landscape.canonical.com
- * Support:        https://ubuntu.com/advantage
-Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
-Last login: Wed Jul  6 21:44:33 2022 from 10.128.0.25
-appuser@someinternalhost:~$
-```
+
+### HW5
+
+- yc iam service-account create --name $SVC_ACCT --folder-id $FOLDER_ID
+- yc iam service-account list
+- yc iam key create --service-account-id $SVC_ACCT_ID --output F:/devops_otus/yandex.cloud.key/key.json
+- yc vpc network list
+- yc vpc subnet list
+- packer validate ./ubuntu16.json
+- packer build ./ubuntu16.json
+- ssh -i ~/.ssh/appuser yc-user@51.250.81.71
+- sudo apt-get update
+- sudo apt-get install -y git
+- git clone -b monolith https://github.com/express42/reddit.git
+- cd reddit && bundle install
+- puma -d
+
+
+
+
+ ## Конфигурации
+
 
 ## Как проверить работоспособность
