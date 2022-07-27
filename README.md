@@ -7,7 +7,7 @@ bastion_IP = 51.250.79.19
   testapp_port = 9292
 
 
-# Выполнено ДЗ №5
+# Выполнено ДЗ №6
 
  - [ ] Основное ДЗ
  - [ ] Задание со *
@@ -28,7 +28,7 @@ bastion_IP = 51.250.79.19
  - sudo pritunl setup-key
  - sudo pritunl default-password ( username: "pritunl")
 
-### HW4
+###HW4
  - ssh 51.250.3.113
  - ssh-keygen -R 51.250.3.113
  - ssh -i  ~/.ssh/appuser -A  yc-user@51.250.3.113
@@ -87,7 +87,15 @@ bastion_IP = 51.250.79.19
 - cd reddit && bundle install
 - puma -d
 
-
+### HW6
+ - yc config list
+ - terraform init -plugin-dir="F:\devops_otus\savimar_infra\terraform\terraform-provider-yandex"
+ - yc compute image list
+ - terraform plan
+ - terraform apply -auto-approve
+ - terraform show | grep nat_ip_address #nat_ip_address     = "51.250.90.207"
+ - terraform refresh
+ - terraform taint yandex_compute_instance.app
 
 
  ## Конфигурации

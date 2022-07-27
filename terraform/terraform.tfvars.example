@@ -1,0 +1,7 @@
+cloud_id                  = "abcgygug"
+folder_id                 = "vghfkhgfkhfh"
+image_id                  = "djdirdtkidtdtydkiy"
+subnet_id                 = "pokihuigylucftycdrftgx"
+public_key_path           = "~/.ssh/yc.pub"
+service_account_key_file  = "key.json"
+private_key_path          = "~/.ssh/yc"
