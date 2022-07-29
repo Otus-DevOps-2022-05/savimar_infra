@@ -20,8 +20,16 @@ variable subnet_id {
   description = "Subnet"
 }
 variable service_account_key_file {
-  description = "key .json"
+  description = "key.json"
 }
-variable private_key_path {
-  description = "path to private key"
+variable private_key {
+  description = "ssh private key"
+}
+variable app_disk_image {
+  description = "Disk image for reddit app"
+  default     = "reddit-app-base"
+}
+variable db_disk_image {
+  description = "Disk image for reddit db"
+  default     = "reddit-db-base"
 }
