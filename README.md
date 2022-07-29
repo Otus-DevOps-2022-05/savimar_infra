@@ -96,6 +96,15 @@ bastion_IP = 51.250.79.19
  - terraform show | grep nat_ip_address #nat_ip_address     = "51.250.90.207"
  - terraform refresh
  - terraform taint yandex_compute_instance.app
+### HW6
+ - eval `ssh-agent -s`
+ - ssh-add  C:/Users/Maria/.ssh/yc
+ - ssh -i  ~/.ssh/yc -A ubuntu@51.250.3.18
+ - terraform apply
+ - terraform get
+ - terraform plan
+ - terraform fmt
+
 
 
  ## Конфигурации
